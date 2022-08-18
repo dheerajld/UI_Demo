@@ -1,0 +1,16 @@
+.container{
+	font-family: Verdana,Arial,Helvetica,Sans-Serif;
+}
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Verdana,Arial,Helvetica,Sans-Serif;
+  
+ 
+}
+
+
+
+

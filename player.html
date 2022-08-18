@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+    <title>
+        Realgy
+    </title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script src="player.js"></script>
+    <script type="text/javascript">
+        function getValue(data) {
+            var myDiv = document.getElementById(data.id + '-value');
+            myDiv.innerHTML = data.value;
+        }
+
+        
+    </script>
+</head>
+
+
+<body>
+
+
+</body>
+
+
+<button type="button" data-dismiss="modal" class="btn btn-success">REPORTS</button>
+<button type="button" data-dismiss="modal" class="btn btn-success">DATA POST</button>
+<button type="button" data-dismiss="modal" class="btn btn-success">TPV MANAGER</button>
+
+
+
+
+
+<div class="card">
+    
+    <div class="card-body">
+        <h6 style=" text-align:left;color:black;">All Calls</h6>
+            <div class="container" style="width: 1080px;overflow: auto;">
+                <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0">
+  
+                    <thead>
+                        <tr>
+                            <td colspan="10" align="center" style="text-align: center;">
+
+                                Sort By: <select id="select1" onchange="getValue(this)">
+                                    <option value="$">Start Date:</option>
+                                    <option value="val1">value 1</option>
+                                    <option value="val2">value 2</option>
+                                    <option value="val3">value 3</option>
+                                </select>
+                                <select id="select2" onchange="getValue(this)">
+                                    <option value="$">Descending</option>
+                                    <option value="val1">value 1</option>
+                                    <option value="val2">value 2</option>
+                                    <option value="val3">value 3</option>
+                                </select>
+                                <input type="button" class="btn btn-success" value="Sort">
+
+                            </td>
+                        </tr>
+
+                        <tr bgcolor="#EBF4FA">
+                            <th>Account No</th>
+                            <th>SubAccount No</th>
+                            <th>Trans Id</th>
+                            <th>Initial Contact</th>
+                            <th>BTN</th>
+                            <th>Call Type</th>
+                            <th>Status</th>
+                            <th>ANI</th>
+                           
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">927173906</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/30/2021 11:06:39 AM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">2106494582</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">924173879</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/29/2021 05:51:42 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">2109869748</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">823182699</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/29/2021 10:49:12 AM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">2107894276</font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#FFF36D">
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">785220333</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 04:56:09 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">5742741751</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Complete</font>
+                            </td>
+                            <td>
+                                <font color="blue">5134574044</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">728395221</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 04:55:47 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">5134574044</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">801204389</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 04:39:05 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">8327805932</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">838181596</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 04:20:53 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">8327805932</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">727395194</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 03:23:38 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">2105570347</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font color="blue">864260276</font>
+                            </td>
+                            <td>
+                                <font color="blue">53774</font>
+                            </td>
+                            <td>
+                                <font color="blue">743246526</font>
+                            </td>
+                            <td>
+                                <font color="blue">01/28/2021 02:21:16 PM</font>
+                            </td>
+                            <td>
+                                <font color="blue">0000000000</font>
+                            </td>
+                            <td>
+                                <font color="blue">Automated</font>
+                            </td>
+                            <td>
+                                <font color="blue">Incomplete</font>
+                            </td>
+                            <td>
+                                <font color="blue">8327805932</font>
+                            </td>
+                        </tr>
+                        
+
+
+                    </tbody>
+
+
+
+                </table>
+            </div>
+        
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="center-screen">
+            <div class="center">
+                <select id="select1" onchange="getValue(this)">
+                    <option value="$">Respones</option>
+                    <option value="val1">value 1</option>
+                    <option value="val2">value 2</option>
+                    <option value="val3">value 3</option>
+                </select>
+                <i class="fa fa-question-circle" style="font-size:18px;color:#3D993D"></i>
+                <div class="btn-group">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success"><i class="fas fa-step-backward"></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success"><i class="icon-white icon-play"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success"><i class="fas fa-undo"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success"><i class="fas fa-step-forward"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success"><i class="fas fa-download">  Download</i></a>
+                </div>
+
+                <select id="select1" onchange="getValue(this)">
+                    <option value="$">All Respones</option>
+                    <option value="val1">value 1</option>
+                    <option value="val2">value 2</option>
+                    <option value="val3">value 3</option>
+                </select>
+                <i class="fa fa-question-circle" style="font-size:18px;color:#3D993D"></i>
+            </div>
+        </div><br />
+
+        <div class="center-screen">
+            <div class="center">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R1</a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R2</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R3</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R4</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R5</a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R6</a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R7</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R8</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R9</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R10</a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R11</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R12</i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-success">R13</a>
+                </div><br />
+                00:04/00:10 <br />
+                <input type="range" class="form-range" id="customRange1">
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+    <h4 style="color:blue;text-align: left;">
+
+        Call Artifact Section &nbsp;&nbsp;-&nbsp;&nbsp; 1212
+    </h4>
+  
+
+<!--Table-->
+
+<div class="card">
+    <div class="card-body">
+<table class="table table-bordered table-sm">
+
+    <tbody>
+      <tr class="table-info">
+        <th>Tpv id:</th>
+        <td>30007509</td>
+        <th>Phone:</th>
+        <td>8159164248</td>
+        <th>Date:</th>
+        <td>	
+            2022-06-01</td>
+        <th>Account no:</th>
+        <td>12345</td>
+      </tr>
+      <tr>
+        <th>End time:</th>
+        <td>11:24:27
+        </td>
+        <th>Status:</th>
+        <td>C</td>
+        <th>Dnis:</th>
+        <td>4424444212
+        </td>
+        <th>Duration:</th>
+        <td>103</td>
+      </tr>
+      <tr class="table-info">
+        <th>Lang:</th>
+        <td>English</td>
+        <th>ANI:</th>
+        <td></td>
+       
+      </tr>
+    
+    </tbody>
+    <!--Table body-->
+  
+  
+  </table>
+  <!--Table-->
+    </div>
+</div>
+
+    
+
+<div class="card">
+    <div class="card-body">
+<table class="table table-bordered table-sm">
+
+    <tbody>
+      <tr class="table-info">
+        <th>Name:</th>
+        <td>Mark</td>
+        <th>Incumbent:</th>
+        <td>12345</td>
+        
+      </tr>
+      <tr>
+        <th>Service Type:</th>
+        <td>MON</td>
+        <th>Rescission Days:</th>
+        <td>DAYS</td>
+       
+      </tr>
+      <tr class="table-info">
+        <th>Program Fee:</th>
+        <td>3.95</td>
+        <th>Benefit Required:</th>
+        <td>1</td>
+       
+      </tr>
+      <tr >
+        <th>Additional Meters:</th>
+        <td>112</td>
+        <th>Incumbent:</th>
+        <td></td>
+        
+      </tr>
+      <tr class="table-info">
+        <th>Enrollment Required:</th>
+        <td>1</td>
+        <th>ETF:</th>
+        <td>4</td>
+       
+      </tr>
+      <tr >
+        <th>Regulatory:</th>
+        <td>5</td>
+        <th>Renewal:</th>
+        <td>544</td>
+       
+      </tr>
+      <tr class="table-info">
+        <th>Term Months:</th>
+        <td>24</td>
+        <th>Price:</th>
+        <td>24.5</td>
+        
+      </tr>
+      <tr>
+        <th>Rate:</th>
+        <td>2.5</td>
+        <th>Storage:</th>
+        <td>4.0</td>
+       
+      </tr>
+      <tr class="table-info">
+        <th>Address:</th>
+        <td>At.p.pune</td>
+        <th>Notice:</th>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <th>Right of Return:</th>
+        <td></td>
+        <th>Sales Authorization:</th>
+        <td></td>
+       
+      </tr>
+    
+    </tbody>
+    <!--Table body-->
+  
+  
+  </table>
+  <!--Table-->
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="center-screen">
+            <button type="button" class="btn btn-success">New Search</button>
+        </div>
+    </div>
+    </div>
+
+    
+<div class="card">
+    <div class="card-body">
+        <div class="center-screen">
+         <i class="fa fa-file-sound-o">All Details</i>  
+        </div>
+    </div>
+    </div>
+    
+
+
+</body>
+
+</html>

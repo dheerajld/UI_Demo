@@ -1,0 +1,302 @@
+<div class="center">
+    <div class="center-screen">
+        <div class="btn-group">
+            <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fas fa-step-backward"></i></a>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="icon-white icon-play"></i></a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fas fa-undo"></i></a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fas fa-step-forward"></i></a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fas fa-download"> Download</i></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="center-screen">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-3">
+        <table>
+            <tr>
+
+            </tr>
+
+            <tr>
+                <th>Phone:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Start Time:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Date:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Account no:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>End time:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Status:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Dnis:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Duration:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Lang:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>ANI:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Type:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <div class="col-md-3">
+        <table>
+            <tr>
+                <th>Agent:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="container">
+            <div class="col-md-2">
+                <div class="row">
+                    <table>
+                        <tr>
+                            <th>BTN:</th>
+                            <td><input type="number"></td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Tpv id:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Phone:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Start Time:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Date:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Account no:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>End time:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Status:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Dnis:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Duration:</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Lang:</th>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>ANI:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Type:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table>
+            <tr>
+                <th>Agent:</th>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+</div>
+Name
+Incumbent
+Service Type
+Rescission_days
+Program Fee
+Benefit Required
+Additional Meters
+Enrollment Required
+ETF
+Regulatory
+Renewal
+Term_months
+Price
+Rate
+Storage
+Address
+Notice
+Right of Return
+Sales Authorization
