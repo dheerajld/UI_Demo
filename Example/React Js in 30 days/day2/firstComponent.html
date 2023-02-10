@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html> <head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <!-- Script tags including React -->
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js
+   "></script>
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+   </script>
+   </head> <body>
+    <div id="app"></div>
+    <div id="app2"></div>
+    <div id="ex"></div>
+    <script type="text/babel">
+    var app = <h1>Hello world</h1>
+    var mountComponent = document.querySelector('#app');
+    ReactDOM.render(app, mountComponent);
+    class App extends React.Component{
+        render(){
+            return(
+                <h1>Hello from our app</h1>
+            )
+                
+            
+        }
+    }
+
+    var mount = document.querySelector('#app2');
+ReactDOM.render(<App />, mount);
+
+class Ex extends React.Component{
+    render(){
+        return <h1>Creating first component on React</h1>
+    }
+}
+
+var comp = document.querySelector("#ex");
+ReactDOM.render(<Ex />,comp)
+
+    </script>
+   </body>
+   </html>
