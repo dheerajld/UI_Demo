@@ -1,0 +1,98 @@
+<!DOCTYPE html> <html> <head>
+    <meta charset="utf-8">
+    <title>UIComponent</title>
+    <!-- Script tags including React -->
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js
+   "></script>
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+   </script>
+   </head> <body>
+    <div id="app"></div>
+   
+    <script type="text/babel">
+ class App extends React.Component{
+        render(){
+            return(
+                <div className="notificationsFrame">
+ <div className="panel">
+ <div className="header">
+ <div className="menuIcon">
+ <div className="dashTop"></div>
+ <div className="dashBottom"></div>
+ <div className="circle"></div>
+ </div>
+ <span className="title">Timeline</span>
+ <input
+ type="text"
+ className="searchInput"
+ placeholder="Search ..." />
+ <div className="fa fa-search searchIcon"></div>
+ </div>
+ <div className="content">
+ <div className="line"></div>
+ <div className="item">
+ <div className="avatar">
+ <img
+ alt='doug'
+ src="https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+/>
+ </div>
+ <span className="time">
+ An hour ago
+ </span>
+ <p>Ate lunch</p>
+ </div>
+ <div className="item">
+ <div className="avatar">
+ <img
+
+ alt='doug'
+src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=911&q=80" />
+ </div>
+ <span className="time">10 am</span>
+ <p>Read Day two article</p>
+ </div>
+ <div className="item">
+ <div className="avatar">
+ <img
+ alt='doug'
+src="https://images.unsplash.com/photo-1560011316-90b2677df5d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80" />
+ </div>
+ <span className="time">10 am</span>
+ <p>Lorem Ipsum is simply dummy text of the printing and 
+typesetting industry.</p>
+ </div>
+ <div className="item">
+ <div className="avatar">
+ <img
+ alt='doug'
+src="https://media.istockphoto.com/id/1427641672/photo/view-at-saint-sophias-cathedral-kiev-ukraine-main-symbol-of-the-ukrainian-orthodox-church.jpg?s=1024x1024&w=is&k=20&c=EpwCos7XeAU0UdVaD-lJcGLagQwQw8iFkoLHjHH4hrQ=" />
+ </div>
+ <span className="time"></span>
+ <p>Lorem Ipsum has been the industry's standard dummy 
+text ever since the 1500s, when an unknown printer took a galley of 
+type and scrambled it to make a type specimen book.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+            )
+                
+            
+        }
+    }
+
+    var mount = document.querySelector('#app');
+ReactDOM.render(<App />, mount);
+
+    </script>
+   </body>
+   </html>
+
+
+
+
+      

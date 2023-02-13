@@ -1,0 +1,76 @@
+<!DOCTYPE html> <html> <head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <!-- Script tags including React -->
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js
+   "></script>
+    <script 
+   src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+   </script>
+   </head> <body>
+    <div id="app"></div>
+    <script type="text/babel">
+    class App extends React.Component{
+        render(){
+            return(
+               <div>
+                <Header title="Timeline" />
+                <Write title="Write" hey="hello" />
+                </div>
+             
+            )
+                
+            
+        }
+    }
+
+    class Header extends React.Component{
+        render(){
+            return(
+                <div className="header">
+ <div className="menuIcon">
+ <div className="dashTop"></div>
+ <div className="dashBottom"></div>
+ <div className="circle"></div>
+ </div>
+ <span className="title">
+ {this.props.title}
+ </span>
+ <input
+ type="text"
+ className="searchInput"
+ placeholder="Search ..." />
+ <div className="fa fa-search searchIcon"></div>
+ </div>
+            )
+        }
+    }
+
+    class Write extends React.Component{
+       
+render(){
+
+    return(
+       <div>
+        <h1>{this.props.title}</h1>
+        <h3>{this.props.hey}</h3>
+    
+      
+        
+        </div>
+
+    )
+    }
+    }
+
+    var mount = document.querySelector('#app');
+ReactDOM.render(<App />, mount);
+
+
+
+
+    </script>
+   </body>
+   </html>
