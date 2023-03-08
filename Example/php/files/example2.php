@@ -93,7 +93,7 @@ $file = fopen("./country_phone.csv", "w");
 fputcsv($file, ['country', 'phone']);
 foreach ($json as $country => $phone) {
     if ($country == "Ghana") {
-        echo "I want to $country I would like $phone";
+        // echo "I want to $country I would like $phone";
     }
 
     fputcsv($file, [$country, $phone]);
@@ -102,3 +102,130 @@ foreach ($json as $country => $phone) {
 fclose($file);
 
 // print_r($json);
+
+$priority = '[
+    {
+      
+        "id": 1,
+        "category_name": "Payments"
+    },
+    {
+      
+        "id": 2,
+        "category_name": "Fuel & Tank"
+    },
+    {
+        
+        "id": 3,
+        "category_name": "Sales & Marketing"
+    },
+    {
+        
+        "id": 4,
+        "category_name": "Miscellaneous"
+    }
+]';
+
+$pushNotifications = json_decode($priority, true);
+
+
+
+// foreach ($pushNotifications as $notification) {
+//     print_r($notification["id"]);
+// }
+
+$a = array(
+    array(
+        "id" => "1",
+        "category_name" => "Payments"
+    ),
+    array(
+        "id" => "2",
+        "category_name" => "Fuel & Tank"
+    ),
+    array(
+        "id" => "3",
+        "category_name" => "Sales & Marketing"
+    ),
+    array(
+        "id" => "4",
+        "category_name" => "Miscellaneous"
+    )
+);
+
+// $b =  json_encode($a, true);
+// foreach ($a as $b) {
+//     $b = (object)$b;
+
+//     print_r($b);
+// }
+
+// $json = json_encode($a);
+// $obj = json_decode($json, false);
+
+
+
+// foreach ($obj as $category) {
+//     // echo $category->id . ': ' . $category->category_name . '<br>';
+//     $pushNotificationsDetails = new stdClass();
+
+//     $pushNotificationsDetails->id = $category->id;
+//     $pushNotificationsDetails->category_name = $category->category_name;
+//     $rows[] = $pushNotificationsDetails;
+// }
+
+// print_r($rows);
+
+
+
+// $json = json_encode($rows);
+
+// echo $json;
+
+// $pushNotificationsDetails = new stdClass();
+
+// $a = $pushNotificationsDetails;
+
+// print_r($a);
+
+
+
+// $std_array = array();
+// foreach ($a as $sub_array) {
+//     $std_array[] = json_decode(json_encode($sub_array), false);
+// }
+// print_r($std_array);
+// $json = json_encode($std_array);
+
+// echo $json;
+
+// $pushNotificationsDetails = new stdClass();
+
+// foreach ($std_array as $object) {
+//     $pushNotificationsDetails->id =   $object->id;
+//     $pushNotificationsDetails->category_name = $object->category_name;
+// }
+
+// $json = json_encode($pushNotificationsDetails);
+
+// echo $json;
+
+$payload = 2;
+
+switch ($payload) {
+    case 1:
+        echo  "Payments";
+        break;
+    case 2:
+        echo "Fuel";
+        break;
+    case 3:
+        echo  "Sale";
+        break;
+    case 4:
+        echo "Mark";
+        break;
+    default:
+
+        break;
+}
